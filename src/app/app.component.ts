@@ -10,6 +10,12 @@ export class AppComponent {
   constructor(private router: Router) {}
 
   goAbout() {
-    this.router.navigate(['about', 178], { queryParams: { filterBy: 'name' } });
+    this.router.navigate(['about', 178], {
+      queryParams: { filterBy: 'name' },
+      queryParamsHandling: 'merge',
+      state: {
+        stateVal: 'someState',
+      },
+    });
   }
 }

@@ -1,3 +1,16 @@
 p {
   font-family: Lato;
 }
+
+button {
+  border: none;
+  margin: 10px;
+  padding: 5px;
+  background-color: yellowgreen;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.btn-active {
+  background-color: yellow;
+}
