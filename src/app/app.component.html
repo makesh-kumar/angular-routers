@@ -1,0 +1,11 @@
+<h2>APP COMPONENT</h2>
+
+<button [routerLink]="['home']">Go Home</button>
+<button [routerLink]="['profile', '23']">Go Profile</button>
+<button (click)="goAbout()">Go About</button>
+
+<button [routerLink]="['invalidurl']">Go Invalid URL</button>
+
+<hr />
+
+<router-outlet></router-outlet>
